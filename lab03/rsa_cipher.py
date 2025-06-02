@@ -27,7 +27,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
 
     def call_api_encrypt(self):
         url = "http://127.0.0.1:5000/api/rsa/encrypt"
@@ -48,7 +48,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
 
     def call_api_decrypt(self):
         url = "http://127.0.0.1:5000/api/rsa/decrypt"
@@ -69,7 +69,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
 
     def call_api_sign(self):
         url = "http://127.0.0.1:5000/api/rsa/sign"
@@ -89,7 +89,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
 
     def call_api_verify(self):
         url = "http://127.0.0.1:5000/api/rsa/verify"
@@ -114,7 +114,7 @@ class MyApp(QMainWindow):
             else:
                 print("Error while calling API")
         except requests.exceptions.RequestException as e:
-            print("Error: %s" % e.message)
+            print(f"Error: {e}")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
